@@ -1,0 +1,17 @@
+{
+   "presets": [
+       "@babel/env"
+   ],
+   "plugins": [
+       "@babel/plugin-transform-regenerator",
+       "@babel/plugin-proposal-object-rest-spread",
+       "@babel/plugin-transform-runtime",
+       "babel-plugin-source-map-support",
+       ["module-resolver", {
+            "root": ["./src"],
+            "alias": {
+                "config": "./dist/config.json"
+            }
+        }]
+   ]
+}

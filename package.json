@@ -1,0 +1,38 @@
+{
+    "name": "config-webpack-test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "clean": "rm -rf ./dist",
+        "build": "npx webpack .",
+        "start": "node ./dist/main",
+        "start:raw": "node .",
+        "test": "npm run build && npm run start:dist"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.0.0-beta.42",
+        "config": "^1.30.0",
+        "fs-extra": "^5.0.0",
+        "js-yaml": "^3.11.0"
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.42",
+        "@babel/plugin-transform-regenerator": "^7.0.0-beta.42",
+        "@babel/plugin-transform-runtime": "^7.0.0-beta.42",
+        "@babel/preset-env": "^7.0.0-beta.42",
+        "babel-core": "^6.26.0",
+        "babel-eslint": "^8.2.2",
+        "babel-loader": "8.0.0-beta.2",
+        "babel-plugin-module-resolver": "^3.1.0",
+        "babel-plugin-source-map-support": "^2.0.1",
+        "eslint-config-standard": "^11.0.0",
+        "eslint-plugin-import": "^2.9.0",
+        "eslint-plugin-node": "^6.0.1",
+        "eslint-plugin-promise": "^3.7.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "webpack": "^4.2.0",
+        "webpack-cli": "^2.0.13",
+        "webpack-node-externals": "^1.6.0"
+    }
+}
