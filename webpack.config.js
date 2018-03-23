@@ -56,11 +56,7 @@ module.exports = {
         main: './index.js',
     },
 
-    // entry: './index.js',
-
     target: 'node',
-
-    // extensions: ['.js', '.json'],
 
     externals: [
         nodeExternals(),
