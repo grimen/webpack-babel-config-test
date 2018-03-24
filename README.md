@@ -1,5 +1,5 @@
 
-# config-webpack-test
+# webpack-babel-config-test
 
 =S
 
